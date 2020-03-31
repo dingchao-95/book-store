@@ -55,7 +55,6 @@ const User = require("./models/user");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(
   multer({
-    dest: "images",
     storage: fileStorage,
     fileFilter: fileFilter
   }).single("image")
